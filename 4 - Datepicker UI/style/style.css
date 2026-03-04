@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.calendar{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.arrow{
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.currentMonth{
+    flex: 1;
+    font-size: 18px;
+    text-align: center;
+}
+.daysGrid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.daysGrid button{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.daysGrid button:hover {
+    background: #eee;
+    border-radius: 6px;
+}
+.sunday{
+    color: red;
+}
+.nonWorkingDay {
+    color: red;
+}
+.daysOfWeek{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: default;
+}
+.putYourDate{
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.putYourDate input{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.chooseMonth{
+    font-weight: bold;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
